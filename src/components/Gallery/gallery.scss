@@ -1,0 +1,30 @@
+#photos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #0c0b09;
+    .gallery_img {
+        border-right: 3px solid #454035;
+        border-bottom: 3px solid #454035;
+        transition: all ease-in-out 0.4s;
+        -webkit-transition: all ease-in-out 0.4s;
+        -moz-transition: all ease-in-out 0.4s;
+        -ms-transition: all ease-in-out 0.4s;
+        -o-transition: all ease-in-out 0.4s;
+    }
+    .gallery_img:hover {
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+    }
+    // row & container-fluid
+    .container-fluid {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .row>* {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

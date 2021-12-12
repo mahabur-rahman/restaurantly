@@ -1,0 +1,51 @@
+#special {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #0c0b09;
+    // content
+    .content {
+        h3 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .fst_text {
+            color: #aaa;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .sst_text {
+            color: #aaa;
+        }
+    }
+    .nav-pills .nav-link {
+        padding: 12px 15px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #000;
+        background-color: #cda45e;
+    }
+    .nav {
+        border-right: 2px solid #cda45e;
+    }
+    .nav-link:hover {
+        color: #cda45e;
+    }
+}
+
+// ----- responsive -----
+@media (max-width: 991px) {}

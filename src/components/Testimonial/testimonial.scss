@@ -1,0 +1,128 @@
+#testimonial {
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: #1a1814;
+    // heading
+    .heading {
+        h5 {
+            position: relative;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            font-family: "Poppins", sans-serif !important;
+        }
+        h5::before {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 1px;
+            top: 23%;
+            left: 11%;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 4px 10px;
+        }
+        h2 {
+            color: #cda45e;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+        }
+    }
+    // client_comments
+    .client_comments {
+        margin-bottom: 4rem;
+        .single_item {
+            .card {
+                position: relative;
+                color: #fff;
+                background: #26231d;
+                height: 280px;
+                // svg
+                svg {
+                    color: #d3af71;
+                    font-size: 22px;
+                }
+                .right_icon {
+                    position: absolute;
+                    right: 60%;
+                    bottom: 36%;
+                }
+                p {
+                    margin-top: -13px;
+                    margin-left: 9%;
+                    font-size: 1rem;
+                    font-style: italic;
+                    background: #26231d;
+                }
+                // img
+                .client_img {
+                    img {
+                        position: absolute;
+                        width: 90px;
+                        bottom: -16%;
+                        left: -4%;
+                        border-radius: 50%;
+                        margin: -40px 0 0 40px;
+                        border: 6px solid rgba(255, 255, 255, 0.2);
+                    }
+                }
+            }
+        }
+    }
+    .name {
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+        h6 {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    // swipper
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+        opacity: 1;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #cda45e;
+    }
+}
+
+// ----------- responsive -----------
+@media (max-width: 1199px) {
+    #testimonial .client_comments .single_item .card .right_icon {
+        right: 49%;
+        bottom: 27%;
+    }
+    #testimonial .client_comments .single_item .card svg {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    #testimonial .client_comments .single_item .card .right_icon {
+        right: 43%;
+        bottom: 59%;
+    }
+}
+
+@media (max-width: 767px) {
+    #testimonial .client_comments .single_item .card .right_icon {
+        right: 56%;
+        bottom: 51%;
+    }
+}
+
+@media (max-width: 575px) {
+    #testimonial .client_comments .single_item .card .right_icon {
+        display: none;
+    }
+}

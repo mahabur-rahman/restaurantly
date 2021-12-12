@@ -1,0 +1,42 @@
+#event {
+    overflow: hidden;
+    padding: 60px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/events-bg.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+    color: #fff;
+    // content
+    .events_content {
+        h3 {
+            font-weight: 600;
+            font-size: 26px;
+            color: #cda45e;
+            line-height: 1.2;
+        }
+        span {
+            border-bottom: 2px solid #cda45e;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .fst_text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        // list
+        .events_list {
+            ul li {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+        opacity: 1;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #cda45e;
+    }
+}

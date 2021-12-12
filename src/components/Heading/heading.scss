@@ -1,0 +1,28 @@
+// heading
+.heading {
+    h5 {
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #aaaaaa;
+        font-family: "Poppins", sans-serif !important;
+    }
+    h5::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        top: 23%;
+        left: 6%;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 4px 10px;
+    }
+    h2 {
+        color: #cda45e;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+    }
+}

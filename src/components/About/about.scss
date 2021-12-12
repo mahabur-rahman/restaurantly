@@ -1,0 +1,92 @@
+#about {
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/about-bg.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+    padding: 5rem 0;
+    // about content
+    .about_content {
+        color: #fff;
+        h3 {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+        .fst_p {
+            font-style: italic;
+        }
+    }
+    // list
+    .about_List {
+        ul li {
+            padding-bottom: 10px;
+        }
+        span {
+            padding-right: 4px;
+            font-size: 20px;
+            color: #cda45e;
+            margin-right: 0.3rem;
+        }
+    }
+    // about img
+    .about_img {
+        position: relative;
+        .img-thumbnail {
+            background-color: #3a3939;
+            border: 1px solid #3a3939;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+        }
+        // before & after
+        &:before {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 60px;
+            height: 60px;
+            z-index: 1;
+            content: "";
+            border-left: 5px solid #cda45e;
+            border-top: 5px solid #cda45e;
+            transition: 0.5s;
+        }
+        &::after {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            z-index: 2;
+            content: "";
+            border-right: 5px solid #cda45e;
+            border-bottom: 5px solid #cda45e;
+            transition: 0.5s;
+        }
+        // hover
+        &:hover img {
+            transform: scale(1.03);
+            -webkit-transform: scale(1.03);
+            -moz-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+            -o-transform: scale(1.03);
+        }
+        &:hover::before {
+            left: 5px;
+            top: 5px;
+        }
+        &:hover::after {
+            right: 5px;
+            bottom: 5px;
+        }
+    }
+}
+
+// ------- responsive -------
+@media (max-width: 1200px) {}

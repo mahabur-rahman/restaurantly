@@ -1,0 +1,219 @@
+#menuItem {
+    overflow: hidden;
+    background: #1a1814;
+    padding: 60px 0;
+    // filter btn
+    .filter_btn {
+        ul li {
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: "Playfair Display", serif;
+        }
+    }
+    // menu item
+    .menu_item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .item_img {
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: 5px solid rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    // content
+    .content {
+        margin-left: -30%;
+        a {
+            font-weight: 700;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .text {
+            font-style: italic;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    // price
+    .price {
+        p {
+            font-weight: 600;
+            color: #cda45e;
+        }
+    }
+    // dash
+    .item_dash1,
+    .item_dash2,
+    .item_dash3,
+    .item_dash4,
+    .item_dash5,
+    .item_dash6,
+    .item_dash7,
+    .item_dash8,
+    .item_dash9 {
+        position: relative;
+    }
+    .item_dash1::after {
+        content: "..............................................................";
+        position: absolute;
+        left: 40%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash2::after {
+        content: "..................................................................";
+        position: absolute;
+        left: 37%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash3::after {
+        content: ".......................................................................";
+        position: absolute;
+        left: 33%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash4::after {
+        content: "...........................................................";
+        position: absolute;
+        left: 43%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash5::after {
+        content: "...............................................................";
+        position: absolute;
+        left: 39%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash6::after {
+        content: ".............................................................";
+        position: absolute;
+        left: 41%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash7::after {
+        content: "...................................................................";
+        position: absolute;
+        left: 36%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash8::after {
+        content: "................................................................";
+        position: absolute;
+        left: 39%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item_dash9::after {
+        content: "...................................................................";
+        position: absolute;
+        left: 35%;
+        right: 0;
+        top: 39%;
+        z-index: 1;
+        color: #bab3a6;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    // hover
+    a:hover {
+        color: #cda45e;
+    }
+}
+
+.list-inline-item.px-2.text-white.mixitup-control-active {
+    color: #cda45e !important;
+}
+
+// ------ responsive ------
+@media (max-width: 767px) {
+    #menuItem .item_dash1::after {
+        content: "........................................";
+    }
+    #menuItem .item_dash2::after {
+        content: "............................................";
+    }
+    #menuItem .item_dash3::after {
+        content: "..................................................";
+    }
+    #menuItem .item_dash4::after {
+        content: ".......................................";
+        left: 44%;
+    }
+    #menuItem .item_dash5::after {
+        content: "...........................................";
+    }
+    #menuItem .item_dash6::after {
+        content: ".........................................";
+        left: 42%;
+    }
+    #menuItem .item_dash7::after {
+        content: "...............................................";
+    }
+    #menuItem .item_dash8::after {
+        content: "............................................";
+    }
+    #menuItem .item_dash9::after {
+        content: "..................................................";
+    }
+    #menuItem .menu_item .item_img img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    #menuItem .item_dash1::after,
+    #menuItem .item_dash2::after,
+    #menuItem .item_dash3::after,
+    #menuItem .item_dash4::after,
+    #menuItem .item_dash5::after,
+    #menuItem .item_dash6::after,
+    #menuItem .item_dash7::after,
+    #menuItem .item_dash8::after,
+    #menuItem .item_dash9::after {
+        display: none;
+    }
+    #menuItem .menu_item {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #menuItem .content {
+        margin-left: 0;
+        margin: 1rem 0;
+    }
+}

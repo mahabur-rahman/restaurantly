@@ -1,0 +1,160 @@
+#footer {
+    overflow: hidden;
+    color: #fff;
+    padding: 60px 0;
+    background-color: #0c0b09;
+    border-top: 1px solid #37332a;
+    border-bottom: 1px solid #28251f;
+    // logo part
+    .logo_part {
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 2px 0 2px 0;
+            line-height: 1;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        h6,
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+            font-family: "Playfair Display", serif;
+            color: #fff;
+        }
+        // social icon
+        .social_icon {
+            a {
+                font-size: 1rem;
+                display: inline-block;
+                background: #28251f;
+                color: #fff;
+                line-height: 1;
+                padding: 8px 0;
+                border-radius: 50%;
+                text-align: center;
+                width: 36px;
+                height: 36px;
+                transition: 0.3s;
+            }
+            a:hover {
+                background-color: #cda45e;
+            }
+        }
+    }
+    // links
+    .links {
+        h6 {
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 12px;
+        }
+        ul li {
+            margin: 0.8rem 0;
+        }
+        ul li a {
+            color: #fff;
+            font-size: 14px;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+        ul li a:hover {
+            color: #cda45e;
+        }
+        svg {
+            margin-right: 5px;
+            color: #cda45e;
+            font-size: 0.7rem;
+            line-height: 1;
+        }
+    }
+    // newsletter
+    .newsletter {
+        h6 {
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 2rem;
+        }
+    }
+    // subscribe form
+    form {
+        position: relative;
+        .form-control {
+            color: #fff;
+            padding: 0.5rem 0.9rem;
+            background: transparent;
+            border: 1px solid #454035;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            box-shadow: none;
+        }
+        .input-group .btn {
+            cursor: pointer;
+            padding: 0.5rem 1.2rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #cda45e;
+            border: none;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+        .form-control:focus {
+            border: 1px solid #cda45e;
+        }
+    }
+}
+
+#footerBottom {
+    overflow: hidden;
+    padding: 30px 0;
+    background: #000000;
+    color: #fff;
+    .footer_bottom {
+        p {
+            font-size: 14px;
+        }
+        .creadits {
+            font-size: 13px;
+        }
+    }
+    a:hover {
+        opacity: 0.8;
+        color: #cda45e;
+    }
+    // top Arrow
+    .topArrow {
+        z-index: 12;
+        position: fixed;
+        top: 50%;
+        right: 1%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+    a.back_top {
+        font-size: 3em;
+    }
+}

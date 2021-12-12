@@ -1,0 +1,41 @@
+#topbar {
+    overflow: hidden;
+    color: #fff;
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    .topbar_content {
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // left part
+        .mobile_no,
+        .time {
+            font-size: 14px;
+        }
+        // right part
+        .topbar_right {
+            a {
+                font-size: 14px;
+            }
+            a:hover {
+                color: #fff;
+            }
+            .de {
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+        svg {
+            color: #d9ba85;
+        }
+    }
+}
+
+// ----- responsive -----
+@media (max-width: 991px) {
+    #topbar .topbar_content {
+        justify-content: center;
+    }
+}
